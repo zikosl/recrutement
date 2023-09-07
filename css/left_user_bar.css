@@ -1,0 +1,161 @@
+.menus .manage
+{
+    float: left;
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    color: #888888;
+    line-height: 41px;
+    margin-bottom: -.5rem;
+    font-family: "Quicksand",'sans sarif';
+    cursor: pointer;
+}
+.menus .manage i
+{
+    float: left;
+    font-size: 28px;
+    line-height: 41px;
+    color: #babebe;
+    margin-right: 10px;
+    width: 35px;
+}
+.menus .accordion
+{
+    border-top: 1px solid #f9f9f9;
+    padding:25px 30px;
+    margin-top: 5em;
+    /* border-radius: 7px */
+}
+
+.menus .card .active,.menus .card .active i
+{
+  color: #9436ff ;  
+}
+.accordion
+{
+    /* box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.08); */
+}
+/*.accordion .card:first-child i
+{
+    color: var(--blue)
+}
+.accordion .card:nth-child(2) i
+{
+    color: var(--green)
+}
+.accordion .card:nth-child(3) i
+{
+    color: var(--yellow)
+}
+.accordion .card:nth-child(4) i
+{
+    color: var(--pink)
+}
+.accordion .card:nth-child(5) i
+{
+    color: var(--cyan)
+}
+.accordion .card:nth-child(6) i
+{
+    color: var(--orange)
+}
+.accordion .card:nth-child(7) i
+{
+    color: var(--info)
+}
+.accordion .card:nth-child(8) i
+{
+    color: var(--danger)
+}
+.accordion .card:nth-child(9) i
+{
+    color: var(--indigo)
+}*/
+.profile img
+{
+border-radius: 100%;
+height: 100%;
+width: 100%;
+}
+.profile
+{
+    margin: auto;
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    border: 6px double #a845ff;
+    text-align: center;
+    margin-bottom: 22px;
+    position: relative;
+}
+.upload
+{
+    --primary:#9733ee !important;
+    margin: auto;
+}
+.upload~.h2
+{
+letter-spacing: 2px;
+font-weight: bolder;
+font-family: 'PT Sans', sans-serif;
+color: #444;
+}
+.btn-upload
+{
+ cursor: pointer;
+ background: rgb(255, 121, 226);
+ color: white !important;
+ outline: none !important;
+ box-shadow: none !important;
+ font-family: 'Quicksand','sans sarif';
+ font-weight: 500;
+ width: 22px;
+ height: 22px;
+ padding: 0;
+ margin: 0;
+ border-radius: 100% !important;
+ position: relative;
+}
+.btn-upload span
+{
+    margin-top: 4px;
+    display: block;
+    font-size: 12px;
+    font-weight: bold !important;
+}
+@media (max-width:992px)
+{
+    .accordion
+    {
+        padding-left: 32%
+    }
+}
+.card
+{
+    border-bottom: 1px solid #88888855 !important;
+    margin:0 !important;
+    padding-bottom: 14px;
+    padding-top: 14px
+}
+.card:first-child,.accordion .card:last-child
+{
+    border: 0 !important
+}
+.ty_can
+{
+    color:#aaa;
+    font-size: 15px;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+}
+.crt_up
+{
+    position: relative;
+}
+.upload
+{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}

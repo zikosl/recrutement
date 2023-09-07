@@ -1,0 +1,171 @@
+.menus .collapse ol:last-child a,.menus .collapsing ol:last-child a
+{
+    padding-bottom: 0;
+    line-height: 2px;
+    margin-top: 7px;
+}
+.menus .collapse ol:first-child a,.menus .collapsing ol:first-child a
+{
+    padding-top: 0;
+    line-height: 2px;
+    margin-bottom: 7px;
+}
+.menus .collapse,.menus .collapsing,.menus .card
+{
+    animation: all 1s !important;
+}
+.menus .collapse a,.menus .collapsing a
+{
+    float: left;
+    width: 100%;
+    font-size: 13px;
+    color: #888888;
+    padding: 6px 0;
+    text-decoration: none !important;
+}
+.menus .collapse ol,.menus .collapsing ol
+{
+    float: left ;
+    width: 100%;
+    position: relative;
+    padding-left: 20px;
+    border-left: 1px solid #e8ecec;
+    transition: all .25s
+}
+.menus .collapse ol:hover,.menus .collapsing ol:hover
+{
+    padding-left: 30px;
+}
+.menus .collapse ol:hover::before,.menus .collapsing ol:hover::before
+{
+    width: 20px;
+}
+.menus .collapse ol:first-child::before,.menus .collapsing ol:first-child::before
+{
+    top: 0;
+}
+.menus .collapse ol:last-child::before,.menus .collapsing ol:last-child::before
+{
+    bottom: 0;
+    top: auto;
+}
+.menus .collapse ol::before,.menus .collapsing ol::before
+{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 10px;
+    height: 1px;
+    content: "";
+    background: #e8ecec;
+    transition: all .25s
+}
+.menus .manage
+{
+    float: left;
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    color: #888888;
+    line-height: 41px;
+    margin-bottom: -.5rem;
+    font-family: "Quicksand",'sans sarif';
+    cursor: pointer;
+}
+.menus .manage i
+{
+    float: left;
+    font-size: 28px;
+    line-height: 41px;
+    color: #babebe;
+    margin-right: 5px;
+    width: 35px;
+}
+.menus .collapse ul,.menus .collapsing ul
+{
+    float: left;
+    width: 100%;
+    padding-left: 34px;
+    margin: 17px 0;
+}
+.menus .card .active,.menus .card .active i
+{
+  color: #9436ff ;  
+}
+/*.accordion .card:first-child i
+{
+    color: var(--blue)
+}
+.accordion .card:nth-child(2) i
+{
+    color: var(--green)
+}
+.accordion .card:nth-child(3) i
+{
+    color: var(--yellow)
+}
+.accordion .card:nth-child(4) i
+{
+    color: var(--pink)
+}
+.accordion .card:nth-child(5) i
+{
+    color: var(--cyan)
+}
+.accordion .card:nth-child(6) i
+{
+    color: var(--orange)
+}
+.accordion .card:nth-child(7) i
+{
+    color: var(--info)
+}
+.accordion .card:nth-child(8) i
+{
+    color: var(--danger)
+}
+.accordion .card:nth-child(9) i
+{
+    color: var(--indigo)
+}*/
+.profile img
+{
+width: 140px;
+height: 140px;
+box-shadow:1.4px 2.5px 4px 1px rgba(0, 0, 0, 0.1);
+border-radius: 50%;
+}
+.profile
+{
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    text-align: center;
+}
+.upload
+{
+    --primary:#9733ee !important;
+    padding-left: 12px;
+}
+.btn-upload
+{
+    color: rgb(255, 0, 200);
+    border: 2px solid rgb(255, 0, 200);
+ outline: none !important;
+ box-shadow: none !important;
+ font-family: 'Quicksand','sans sarif';
+ font-weight: 500;
+}
+.btn-upload:hover,.btn-upload:focus
+{
+background: rgb(255, 0, 200);
+color: white;
+}
+@media (max-width:992px)
+{
+    .accordion
+    {
+        padding-left: 32%
+    }
+}

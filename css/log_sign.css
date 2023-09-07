@@ -1,0 +1,128 @@
+input
+{
+  font-family: 'Raleway', sans-serif;
+}
+.f-cairo
+     {
+        font-family: 'Cairo', sans-serif;
+     }
+     .f-robot
+     {
+        font-family: 'Roboto', sans-serif;
+     }
+     .f-open
+     {
+        font-family: 'Open Sans', sans-serif;
+     }
+     .f-raleway
+     {
+        font-family: 'Raleway', sans-serif;
+     }
+     .f-major
+     {
+        font-family: 'Major Mono Display', monospace ;
+     }
+     .o-hidden
+     {
+         overflow-x: hidden;
+     }
+     
+     @media screen and (min-width:1200px)
+     {
+        .border-right
+      {
+         border-right: 1px solid black;
+       }
+       .border-left
+      {
+         border-left: 1px solid black;
+       }
+     }
+     .bg-img
+     {
+         background-image: url(../images/business-camera-coffee-1509428.jpg);
+         background-attachment: fixed;
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+     .custom-label
+     {
+       position:absolute;
+       top: 0rem;
+       left:-1px;
+       transition: .2s top,font-size;
+       font-size: 22px;
+       font-family: 'Cairo', sans-serif;
+       cursor: text;
+       display: inline-block;
+     }
+          
+     .form-group
+     {
+       position: relative;
+           margin-top: 40px !important;
+           margin-bottom: 40px !important;
+     }
+     .form-control
+     {
+           border:none !important;
+           border-bottom: 1px solid #9733ee !important;
+           border-radius: 0 !important;
+           outline: none !important;
+           box-shadow: none !important;
+     }
+     .btn-aqua
+     {
+      background: #8f24e6;
+      background: -webkit-linear-gradient(210deg, #E100FF, #8f24e6);
+      background: linear-gradient(210deg, #E100FF, #8f24e6);
+      transition: all .2s;
+      color:white !important;
+      border-radius: 50px;
+     }
+     .border-aqua
+     {
+       border:1px solid #2096ff !important;
+       border-radius: 20px
+     }
+     .btn-aqua:hover,.btn-aqua:focus
+     { 
+      transition: all .2s;
+      box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+     }
+     .mt-100
+     {
+       margin-top: 100%
+     }
+     .text-shadow
+     {
+       text-shadow:2px 2px 2px black;
+     }
+     
+     .ma-c
+     {
+      position: absolute;
+    top: -13px;
+    right: 28%;
+     }
+     .bg-white-custom
+     {
+       background: rgba(255, 255, 255, 0.7);
+     }
+     .rounded-3
+     {
+       border-radius: 14px;
+     }
+     .text-indigo
+{
+color: #9733ee
+}
+.f-18
+{
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    border-color: #9733ee !important;
+    background-color: #9733ee !important;
+}

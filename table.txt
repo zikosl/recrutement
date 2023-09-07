@@ -1,0 +1,14 @@
+1/creat database recrutment
+2/CREATE TABLE Register (id int not null AUTO_INCREMENT,first_n varchar(30),last_n varchar(30),pass varchar(30),email varchar(30),phone varchar(20),type varchar(3),token varchar(30),tokenExp Date,PRIMARY KEY(id))
+3/CREATE TABLE Candidat (id int not null AUTO_INCREMENT,birthday Date,Curr_sale int(20),Exp_sale int(20),canid int,PRIMARY KEY(id),FOREIGN KEY (canid) REFERENCES Register(id));
+4/CREATE TABLE Empolyer (id int not null AUTO_INCREMENT,Alow_search bool,Fndd_date int(20),categ varchar(255),dscrpt text,website varchar(20),empid int,PRIMARY KEY (id),FOREIGN KEY (empid) REFERENCES Register(id))
+5/CREATE TABLE Experience (id int not null AUTO_INCREMENT,title varchar(40),company varchar(40),ent_date varchar(20),ser_date varchar(20),dscrpt text,expid int,PRIMARY KEY (id),FOREIGN KEY (expid) REFERENCES candidat(id));
+6/CREATE TABLE Education (id int not null AUTO_INCREMENT,title varchar(40),univ varchar(40),ent_date varchar(20),ser_date varchar(20),dscrpt text,eduid int,PRIMARY KEY (id),FOREIGN KEY (eduid) REFERENCES candidat(id));
+7/CREATE TABLE Skill (id int not null AUTO_INCREMENT,title varchar(40),prsnt int(3),skilid int,PRIMARY KEY (id),FOREIGN KEY (skilid) REFERENCES candidat(id));
+8/CREATE TABLE Awords (id int not null AUTO_INCREMENT,title varchar(40),from_ varchar(20),to_ varchar(20),dscrpt text,awrdid int,PRIMARY KEY (id),FOREIGN KEY (awrdid) REFERENCES candidat(id));
+9/CREATE TABLE social (id int NOT null AUTO_INCREMENT,fb varchar(200),twitter varchar(200),Linked varchar(200),Gplus varchar(200),soc_id int,PRIMARY KEY(id),FOREIGN KEY (soc_id) REFERENCES register(id));
+10/CREATE TABLE location (id int NOT null AUTO_INCREMENT,century varchar(70),region varchar(70),city varchar(70),post_code varchar(200),loc_id int,PRIMARY KEY(id),FOREIGN KEY (loc_id) REFERENCES register(id));
+11/CREATE TABLE resume (id int AUTO_INCREMENT NOT null,empid int NOT null,canid int NOT null,FOREIGN KEY(empid) REFERENCES empolyer(id),FOREIGN KEY(canid) REFERENCES candidat(id),PRIMARY KEY(id))
+12/CREATE TABLE job (id int AUTO_INCREMENT NOT null,title varchar(50),post_date DATE,last_view Date,sale int(6),experience int(2),gender bit,qual varchar(30),lang int(1),career varchar(30),empid int,FOREIGN KEY (empid) REFERENCES empolyer(id),PRIMARY KEY(id))
+13/CREATE TABLE follow (id int NOT null AUTO_INCREMENT,canid int,empid int,FOREIGN KEY(canid) REFERENCES candidat(id),FOREIGN KEY(empid) REFERENCES empolyer(id),PRIMARY KEY(id));
+14/CREATE TABLE shortlist (id int AUTO_INCREMENT NOT null,jobid int,canid int ,FOREIGN KEY(jobid) REFERENCES job(id),FOREIGN KEY(canid) REFERENCES candidat(id),PRIMARY KEY(id))

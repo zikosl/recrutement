@@ -1,0 +1,146 @@
+.nav li
+{
+  position: relative;
+}
+.nav li a:hover
+{
+  color: #fff;
+}
+.nav li a {
+  color: #fff;
+  text-align:center;
+  padding: 0.8rem .7rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #484848;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+.nav li a:hover i {
+  top: 0;
+  opacity: 1;
+}
+.nav li i {
+  top: -30px;
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 16px;
+  font-size: 20px;
+  width: auto;
+}
+.nav li i::before
+{
+  position: absolute;
+  top: 54px;
+  right: var(--w);
+  opacity: 0;
+  transition: all .3s
+}
+.nav li a:hover i::before
+{
+  position: absolute;
+  top:16px;
+  opacity: 1;
+}
+.f-link
+{
+  font-size: 20px;
+}
+.f-link::before
+{
+  position: absolute;
+  font-size: 20px;
+  top: 16px;
+  right: var(--w);
+  opacity: 1;
+  transition: all .3s;
+}
+.f-link:hover:before {
+  top:-20px;
+  opacity: 0;
+}
+.fa-twitter:hover
+{
+background: #55ACEE;
+}
+.fa-facebook-f:hover
+{
+ background:  #3B5998;
+}
+.fa-linkedin-in:hover
+{
+  background: #007bb5;
+}
+.fa-google-plus-g:hover
+{
+  background: #dd4b39;
+}
+.fab
+{
+  font-weight: 400 !important;
+}
+.bef-li
+{
+  position: relative;
+  transition: all .25s;
+  padding: 0.5rem 24px;
+}
+.bef-li:hover
+{
+  padding-left: 34px;
+}
+.bef-li:hover::before
+{
+  width: 25px;
+}
+.bef-li::before
+{
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 15px;
+  height: 1.5px;
+  content: "";
+  background: #fff;
+  transition: all .25s;
+
+}
+/**********************/
+.linear
+{
+color: #88888855;
+margin: 0 auto;
+width: 40px;
+text-align: center;
+position: relative;
+font-size: 18px;
+}
+.linear::after,.linear::before
+{
+  background: #88888855; 
+content: "";
+position: absolute;
+height: 1px;
+width: 60px;
+}
+.linear::after
+{
+ right: -70px;
+ bottom: 11px;
+}
+.linear::before
+{
+  left: -70px;
+ bottom: 11px;
+}
